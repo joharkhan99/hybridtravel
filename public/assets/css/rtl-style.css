@@ -1,0 +1,751 @@
+
+html[lang="ar"] body{
+    direction: rtl;
+}
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3, html[lang="ar"] h4, html[lang="ar"] h5, html[lang="ar"] h6, html[lang="ar"] .h1, html[lang="ar"] .h2, html[lang="ar"] .h3, html[lang="ar"] .h4, html[lang="ar"] .h5, html[lang="ar"] .h6 {
+    text-align: right;
+}
+html[lang="ar"] .ml-auto, html[lang="ar"] .mx-auto {
+    margin-right: auto !important;
+    margin-left: unset !important;
+}
+html[lang="ar"] .search-bg .mtab .list-group-item i {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+html[lang="ar"] .search-bg .mtab .list-group-item {
+    border-left: 1px solid #474886;
+    border-right: unset;
+}
+html[lang="ar"] .search-bg .mtab .list-group-item:first-child {
+    border-radius: 0px 4px 0px 0px;
+}
+html[lang="ar"] .tab-bg {
+    text-align: right;
+}
+html[lang="ar"] .tab-bg .stab .list-group-item:first-child {
+    border-radius: 0px 4px 4px 0px;
+}
+html[lang="ar"] .tab-bg .stab .list-group-item:last-child {
+    border-radius: 4px 0px 0px 4px;
+}
+html[lang="ar"] .input input {
+    padding: 8px 45px 8px 15px;
+}
+html[lang="ar"] .input img {
+    right: 23px;
+    border-left: 1px solid #e4e4e4;
+    border-right: unset;
+    padding-left: 5px;
+}
+html[lang="ar"] .best-bg, html[lang="ar"] .support-bg {
+    padding: 15px 70px 15px 70px;
+    text-align: right;
+}
+html[lang="ar"] .slick-slider {
+    direction: ltr;
+}
+html[lang="ar"] .best-block-bg {
+    direction: rtl;
+}
+html[lang="ar"] .best-block-bg footer {
+    border-radius: 4px 0px 0px 4px;
+    margin: -55px -19px 0px 0px;
+}
+html[lang="ar"] .best-block-bg footer:before {
+    left: unset;
+    right: 0;
+    border-right: unset;
+    border-left: 19px solid #c9c9c9;
+}
+html[lang="ar"] .title {
+    text-align: center;
+}
+html[lang="ar"] .title:before {
+    margin-left: unset;
+    margin-right: -15%;
+    background-image: linear-gradient(to left, #f6f6f6, #ed1d24);
+}
+html[lang="ar"] .title:after {
+    background-image: linear-gradient(to right, #f6f6f6, #ed1d24);
+}
+html[lang="ar"] .title1 {
+    text-align: center;
+}
+html[lang="ar"] .title1:before {
+    margin-left: unset;
+    margin-right: -15%;
+    background-image: linear-gradient(to left, #f6f6f6, #ed1d24);
+}
+html[lang="ar"] .title1:after {
+    background-image: linear-gradient(to right, #f6f6f6, #ed1d24);
+}
+html[lang="ar"] .tour-block h2 {
+    margin: -15px -10px 0px 0px;
+}
+html[lang="ar"] .tour-block:before {
+    right: -11px;
+    left: unset;
+    border-right: unset;
+    border-left: 11px solid #d2d2d2;
+}
+html[lang="ar"] .sub-email {
+    text-align: right;
+}
+html[lang="ar"] .sub-input input {
+    border-radius: 0px 4px 4px 0px;
+}
+html[lang="ar"] .sub-input button {
+    border-radius: 4px 0px 0px 4px;
+}
+html[lang="ar"] .sms-bg select {
+    border-radius: 0px 4px 4px 0px;
+}
+html[lang="ar"] .sms-bg button {
+    border-radius: 4px 0px 0px 4px;
+}
+html[lang="ar"] .download h3{
+    text-align: center;
+}
+html[lang="ar"] footer .social {
+    text-align: right;
+}
+html[lang="ar"] footer .social a {
+    margin-right: unset;
+    margin-left: 10px;
+}
+html[lang="ar"] footer .backto {
+    direction: ltr;
+}
+html[lang="ar"] footer .flink a {
+    text-align: right;
+}
+html[lang="ar"] footer .flink a i {
+    margin-right: unset;
+    margin-left: 8px;
+}
+html[lang="ar"] .copy {
+    text-align: right;
+}
+html[lang="ar"] .text-right {
+    text-align: left!important;
+}
+html[lang="ar"] .view-more {
+    right: unset;
+    left: 0;
+}
+
+/*common*/
+html[lang="ar"] .blog-bg .blog-item img {
+    border-radius: 6px 0px 0px 6px;
+}
+html[lang="ar"] .blog-bg .blog-item .blog-text {
+    padding: 25px 25px 25px 0px;
+    text-align: right;
+}
+html[lang="ar"] .blog-bg h3 {
+    text-align: center !important;
+}
+html[lang="ar"] .blog-bg h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .news-bg .news-item img {
+    border-radius: 6px 0px 0px 6px;
+}
+html[lang="ar"] .news-bg .news-item .news-text {
+    padding: 25px 25px 25px 0px;
+    text-align: right;
+}
+html[lang="ar"] .news-bg h3 {
+    text-align: center !important;
+}
+html[lang="ar"] .news-bg h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .testimonial-bg h2 {
+    text-align: center !important;
+}
+html[lang="ar"] .testimonial-bg h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .testi-con {
+    direction: rtl;
+}
+html[lang="ar"] .testi-con-name {
+    padding: 8px 15px 0px 50px;
+    text-align: right;
+}
+html[lang="ar"] .banner-blog h1 {
+    text-align: center !important;
+}
+html[lang="ar"] .banner-blog h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .about-bg .about-intro {
+    text-align: right;
+}
+html[lang="ar"] .about-bg .about-intro ul li {
+    padding-right: 30px;
+    padding-left: 0px;
+}
+html[lang="ar"] .about-bg .about-intro ul li::before {
+    border-left: unset;
+    border-right: 14px solid #d2d2d2;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    right: 3px;
+    left: unset;
+}
+html[lang="ar"] .about-bg .about-intro ul li::after {
+    border-left: unset;
+    border-right: 14px solid #003580;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    right: 0;
+    left: unset;
+}
+html[lang="ar"] .about-bg .intro-img {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+html[lang="ar"] .about-bg .intro-img:before {
+    left: unset;
+    right: -30px;
+}
+html[lang="ar"] .about-tag h3 {
+    text-align: center !important;
+}
+html[lang="ar"] .why-us h3 {
+    text-align: center !important;
+}
+html[lang="ar"] .why-us h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .why-us .why-item h2 {
+    text-align: center;
+}
+html[lang="ar"] .team-bg h3 {
+    text-align: center !important;
+}
+html[lang="ar"] .team-bg .team-item h2, html[lang="ar"] .team-bg .team-item h5 {
+    text-align: center !important;
+}
+html[lang="ar"] .client-bg h3, html[lang="ar"] .client-bg h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .error-bg h2, html[lang="ar"] .error-bg h4, html[lang="ar"] .error-bg h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .login-inp {
+    text-align: right;
+}
+html[lang="ar"] .forgot {
+    right: 60px;
+}
+html[lang="ar"] .orlogin {
+    direction: ltr;
+}
+html[lang="ar"] .orsignup {
+    direction: ltr;
+}
+html[lang="ar"] .login-bg h1 span {
+    padding-bottom: 5px;
+}
+html[lang="ar"] .blog-search input {
+    padding: 10px 15px 10px 35px;
+}
+html[lang="ar"] .blog-search button {
+    right: unset;
+    left: 0;
+}
+html[lang="ar"] .recent-post a {
+    text-align: right;
+}
+html[lang="ar"] .tag-bg{
+    text-align: right;
+}
+html[lang="ar"] .tag-bg a {
+    margin-right: unset;
+    margin-left: 5px;
+}
+html[lang="ar"] .post-info {
+    text-align: right;
+}
+html[lang="ar"] .post-info small {
+    display: inline-block;
+    border-right: unset;
+    border-left: 1px solid #8f9397;
+}
+html[lang="ar"] .post-info small:last-child {
+    border-right: unset;
+    border-left: unset !important;
+}
+html[lang="ar"] .post-info small:first-child {
+    padding-left: 10px;
+    padding-right: 0px;
+}
+html[lang="ar"] .blockquote {
+    border-left: unset;
+    border-right: 4px solid #ed2028;
+    text-align: right;
+}
+html[lang="ar"] .blog-author {
+    padding: 20px 120px 20px 20px;
+    text-align: right;
+}
+html[lang="ar"] .blog-author img {
+    right: 25px;
+    left: unset;
+}
+html[lang="ar"] .blog-comment .media .reply {
+    right: unset;
+    left: 0px;
+}
+html[lang="ar"] .blog-comment .media {
+    text-align: right;
+}
+html[lang="ar"] .mr-3, html[lang="ar"] .mx-3 {
+    margin-left: 1rem!important;
+    margin-right: unset !important;
+}
+html[lang="ar"] .related-article-bg .article-item {
+    text-align: right;
+}
+html[lang="ar"] .mr-2, html[lang="ar"] .mx-2 {
+    margin-left: .5rem!important;
+    margin-right: unset !important;
+}
+html[lang="ar"] .blog-list {
+    padding-left: unset;
+    padding-right: 85px;
+    text-align: right;
+}
+html[lang="ar"] .pdate {
+    right: 15px;
+    left: unset;
+}
+html[lang="ar"] .page-item:first-child .page-link {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+}
+html[lang="ar"] .page-item:last-child .page-link {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+html[lang="ar"] .table {
+    text-align: right;
+}
+html[lang="ar"] .form-group {
+    text-align: right;
+}
+html[lang="ar"] .form-check {
+    padding-right: 1.25rem;
+    padding-left: unset;
+}
+html[lang="ar"] .form-check-input {
+    margin-right: -1.25rem;
+    margin-left: unset;
+}
+html[lang="ar"] .form-bg {
+    text-align: right;
+}
+html[lang="ar"] .text-box {
+    text-align: right;
+}
+html[lang="ar"] .flight-bg {
+    padding: 5px 10px 5px 20px;
+}
+html[lang="ar"] .agentfare {
+    right: unset;
+    left: 0px;
+    padding: 0px 10px 7px 5px;
+    border-radius: 13px 0px 50px 0px;
+}
+html[lang="ar"] .agentfared {
+    margin: -5px -10px 5px -20px;
+}
+html[lang="ar"] .flight-detail-bg .details {
+    float: left;
+}
+html[lang="ar"] .flight-detail {
+    text-align: right;
+}
+html[lang="ar"] .filter-side label {
+    text-align: right;
+}
+html[lang="ar"] .force-overflow {
+    padding-right: 0px;
+}
+html[lang="ar"] .cab-bg {
+    text-align: right;
+}
+html[lang="ar"] .cab-bg .faci b {
+    margin-right: unset;
+}
+html[lang="ar"] .agentfare-h {
+    left: 0px;
+    right: unset;
+    padding: 0px 10px 7px 5px;
+    border-radius: 13px 0px 50px 0px;
+}
+html[lang="ar"] .career-cont{
+    text-align: right;
+}
+html[lang="ar"] .career-intro {
+    text-align: right;
+}
+html[lang="ar"] .career-intro p strong{
+    float: right;
+    margin-left: 5px;
+}
+html[lang="ar"] .faqs-support {
+    text-align: right;
+}
+html[lang="ar"] .career-bg .article-item .postedby .media .apply-now {
+    right: unset;
+    left: 20px;
+}
+html[lang="ar"] .career-search button {
+    padding: 12px 25px;
+    border-radius: 4px 0px 0px 4px !important;
+    min-height: 45px;
+}
+html[lang="ar"] .career-bg .article-item {
+    text-align: right;
+}
+html[lang="ar"] .career-search input {
+    border-radius: 0px 3px 3px 0px !important;
+    border: unset;
+}
+html[lang="ar"] .maintenance-bg .maintenance-text .subscribe-sec input {
+    padding: 22px 20px;
+    border-radius: 0px 4px 4px 0px !important;
+}
+html[lang="ar"] .maintenance-bg .maintenance-text .subscribe-sec button {
+    border-radius: 4px 0px 0px 4px;
+}
+html[lang="ar"] .coomon-page-bg {
+    text-align: right;
+}
+html[lang="ar"] .side-nav {
+    text-align: right;
+}
+html[lang="ar"] .contact-info {
+    text-align: right;
+}
+html[lang="ar"] .contact-form .data-notes {
+    text-align: right;
+}
+html[lang="ar"] .faq-bg .article-item {
+    text-align: right;
+}
+html[lang="ar"] .faq-search input {
+    border-radius: 0px 3px 3px 0px !important;
+}
+html[lang="ar"] .faq-search button {
+    padding: 12px 25px;
+    border-radius: 4px 0px 0px 4px !important;
+}
+html[lang="ar"] .hotel-bg {
+    text-align: right;
+}
+html[lang="ar"] .hotel-bg .rate {
+    padding-right: unset;
+    padding-left: 10px;
+}
+html[lang="ar"] .slide-bg .fac {
+    text-align: right;
+}
+html[lang="ar"] .hdetails {
+    text-align: right;
+}
+html[lang="ar"] .hotel-bg .location {
+    float: right;
+    padding-left: 10px;
+}
+html[lang="ar"] .hheading i {
+    float: right;
+}
+html[lang="ar"] .hheading {
+    background-color: #f7f7f7;
+    padding: 15px 15px 8px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    text-align: right;
+}
+html[lang="ar"] .timeline-start h2{
+    text-align: center !important;
+}
+html[lang="ar"] .timeline {
+    direction: ltr;
+}
+html[lang="ar"] .timeline-content {
+    direction: rtl;
+    text-align: right;
+}
+html[lang="ar"] .timeline-content ul {
+    padding-right: 0px;
+}
+html[lang="ar"] .timeline-end h2{
+    text-align: center !important;
+}
+html[lang="ar"] .user-profile-bg .user-profile-info h2, .user-profile-bg .user-profile-info h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .user-profile-bg .user-nav {
+    text-align: right;
+}
+html[lang="ar"] .user-profile-bg .user-nav ul li a i {
+    margin-right: unset;
+    margin-left: 6px;
+}
+html[lang="ar"] .btn-add {
+    left: 15px;
+    right: unset;
+}
+html[lang="ar"] .custom-file-label::after {
+    left: 0;
+    right: unset;
+    border-radius: .25rem 0 0 .25rem;
+}
+html[lang="ar"] .dasboard-content-bg .dashboard-item {
+    text-align: right;
+}
+html[lang="ar"] .bflight-bg {
+    text-align: right;
+}
+html[lang="ar"] .fi i {
+    right: -8px;
+    left: unset;
+}
+
+/*Elements*/
+html[lang="ar"] .panel-heading .fa {
+    left: 15px;
+    right: unset;
+}
+html[lang="ar"] .blog-design-one-item img {
+    border-radius: 6px 0px 0px 6px;
+}
+html[lang="ar"] .blog-design-one-item .blog-design-one-text {
+    padding: 25px 25px 25px 0px;
+    text-align: right;
+}
+html[lang="ar"] .blog-design-one-item h3, html[lang="ar"] .blog-design-one-item h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .blog-design-two-item {
+    text-align: right;
+}
+html[lang="ar"] .blog-design-three {
+    padding-right: 85px;
+    padding-left: unset;
+    text-align: right;
+}
+html[lang="ar"] .blog-design-four {
+    text-align: right;
+}
+html[lang="ar"] .blog-design-five {
+    text-align: right;
+}
+html[lang="ar"] .blog-design-five .blog-design-five-text .blog-design-five-category {
+    right: 0;
+    left: unset;
+}
+html[lang="ar"] .blog-design-six .blog-design-six-text {
+    text-align: right;
+}
+html[lang="ar"] .cal-to-action-two h6 {
+    text-align: center !important;
+}
+html[lang="ar"] .cal-to-action-three {
+    text-align: right;
+}
+html[lang="ar"] .cal-to-action-five {
+    text-align: right;
+}
+html[lang="ar"] .cal-to-action-six {
+    text-align: right;
+}
+html[lang="ar"] .cal-to-action-eight h2 {
+    text-align: center !important;
+}
+html[lang="ar"] .testimonial-design-seven-con .testimonial-design-seven-text {
+    direction: rtl;
+    text-align: right;
+}
+html[lang="ar"] .carousel-caption h5{
+    text-align: center !important;
+}
+html[lang="ar"] .modal-header .close {
+    margin: -1rem auto -1rem -1rem;
+}
+html[lang="ar"] .modal-footer>:not(:last-child) {
+    margin-left: .25rem;
+    margin-right: unset;
+}
+html[lang="ar"] .cal-to-action-two h2 {
+    text-align: center !important;
+}
+html[lang="ar"] .breadcrumb-item+.breadcrumb-item {
+    padding-right: .5rem;
+    padding-left: unset;
+}
+html[lang="ar"] .tab-content>.tab-pane {
+    text-align: right;
+}
+html[lang="ar"] .testimonial-design-two-con {
+    direction: rtl;
+    text-align: right;
+}
+html[lang="ar"] .testimonial-design-two-con-name {
+    padding: 5px 60px 5px 10px;
+}
+html[lang="ar"] .testimonial-design-two-con-name .testi-img {
+    right: 0;
+    left: unset;
+}
+html[lang="ar"] .testimonial-design-three-con {
+    direction: rtl;
+    text-align: right;
+}
+html[lang="ar"] .testimonial-design-four-con {
+    padding: 30px 125px 30px 30px;
+    text-align: right;
+}
+html[lang="ar"] .testimonial-design-four-con:before {
+    right: 30px;
+    left: unset;
+}
+html[lang="ar"] .testimonial-design-five-con {
+    text-align: right;
+}
+html[lang="ar"] .testimonial-design-six-con {
+    direction: rtl;
+}
+html[lang="ar"] .testimonial-design-seven-con-name {
+    padding: 30px 90px 5px 10px;
+    text-align: right;
+}
+html[lang="ar"] .testimonial-design-seven-con-name .testi-img {
+    right: 0;
+    left: unset;
+}
+html[lang="ar"] .testimonial-design-seven-con .testimonial-design-seven-text:after {
+    right: 22px;
+    left: unset;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px)
+{
+    html[lang="ar"] .float-lg-right {
+        float: left!important;
+    }
+    /*common*/
+    html[lang="ar"] .offset-lg-3 {
+        margin-left: unset;
+        margin-right: 25%;
+    }
+    html[lang="ar"] .text-lg-right {
+        text-align: left !important;
+    }
+}
+
+@media (min-width: 768px)
+{
+    
+}
+
+@media (max-width: 991px){
+    html[lang="ar"] .navigation .navbar .nav-link {
+        text-align: right;
+    }
+    html[lang="ar"] .navigation .navbar .nav-link i {
+        float: right;
+    }
+    html[lang="ar"] .top-bar .navbar-nav {
+        right: unset;
+        left: 0;
+        text-align: right;
+        padding-right: 0;
+    }
+    /*common*/
+    html[lang="ar"] .blog-bg .blog-item img {
+        border-radius: 0px 0px 6px 6px;
+    }
+    html[lang="ar"] .blog-bg .blog-item .blog-text {
+        padding: 25px 25px 25px 25px;
+    }
+    html[lang="ar"] .news-bg .news-item img {
+        border-radius: 0px 0px 6px 6px;
+    }
+    html[lang="ar"] .news-bg .news-item .news-text {
+        padding: 25px 25px 25px 25px;
+    }
+    html[lang="ar"] .blog-design-one-item img {
+        border-radius: 0px 0px 6px 6px;
+    }
+    html[lang="ar"] .blog-design-one-item .blog-design-one-text {
+        padding: 25px 25px 25px 25px;
+    }
+    
+}
+
+@media (max-width: 767px)
+{
+    html[lang="ar"] .mob-nav .col-3 {
+        border-left: 1px solid #002b67;
+        border-right:unset;
+    }
+    html[lang="ar"] .mob-nav .col-3:last-child {
+        border-left-color: transparent;
+    }
+    html[lang="ar"] .flight-detail-bg .details {
+        float: right;
+    }
+    html[lang="ar"] .timeline::after {
+        right: 5px;
+        left: unset;
+    }
+    html[lang="ar"] .timeline-cont {
+        padding-left: 15px;
+        padding-right: 40px;
+    }
+    html[lang="ar"] .timeline-cont::before {
+        right: 30px;
+        left: unset;
+        border-width: 10px 0px 10px 10px;
+        border-color: transparent transparent transparent #003580;
+    }
+    html[lang="ar"] .timeline-left::after, html[lang="ar"] .timeline-right::after {
+        right: -4px;
+        left: unset;
+    }
+}
+
+@media (min-width:576px) and (max-width: 767px){
+    /*common*/
+    html[lang="ar"] .blog-bg .blog-item img {
+        border-radius: 6px 0px 0px 6px;
+    }
+    html[lang="ar"] .news-bg .news-item img {
+        border-radius: 6px 0px 0px 6px;
+    }
+    html[lang="ar"] .blog-design-one-item img {
+        border-radius: 6px 0px 0px 6px;
+    }
+}
