@@ -9,15 +9,33 @@
 
     <div class="col-sm-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
 
-      <div class="login-bg">
-
+      <form class="login-bg" action="{{route('login')}}" method="post">
+        @csrf
         <h1><span>Login</span></h1>
+
+        @if (session('message'))
+        <span>
+          {{ session('message') }}
+        </span>
+        @endif
+
+        @if ($errors->has('email'))
+        <span>
+          {{$errors->first('email')}}
+        </span>
+        @endif
+
+        @if ($errors->has('password'))
+        <span>
+          {{$errors->first('password')}}
+        </span>
+        @endif
 
         <div class="login-inp">
 
           <span>Email or Mobile Number</span>
 
-          <input type="text" placeholder="Email or Mobile Number">
+          <input type="text" placeholder="Email or Mobile Number" name="email" value="{{old('email')}}">
 
         </div>
 
@@ -25,7 +43,7 @@
 
           <span>Password</span>
 
-          <input type="text" placeholder="minimum 6 characters.">
+          <input type="text" placeholder="minimum 6 characters." name="password" value="{{old('password')}}">
 
         </div>
 
@@ -91,7 +109,7 @@
 
 
 
-      </div>
+      </form>
 
     </div>
 

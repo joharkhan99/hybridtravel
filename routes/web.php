@@ -23,7 +23,7 @@ Route::get("/", [FrontController::class, "index"]);
 Route::get("/about", [FrontController::class, "about"]);
 Route::get("/blog", [FrontController::class, "blog"]);
 Route::get("/login", [FrontController::class, "login"]);
-Route::get("/signup", [FrontController::class, "signup"]);
+Route::get("/signup", [FrontController::class, "signup"])->name('signup');
 Route::get("/blog-details", [FrontController::class, "blogdetails"]);
 Route::get("/bus-checkout", [FrontController::class, "buscheckout"]);
 Route::get("/bus", [FrontController::class, "bus"]);
@@ -75,7 +75,7 @@ Route::prefix('agent')->group(function () {
   Route::get("/wallet", [AgentController::class, "wallet"]);
 });
 
-Route::prefix('user')->group(function () {
+Route::prefix('user')->middleware('auth.user')->group(function () {
   Route::get("/", [UserController::class, "index"]);
   Route::get("/binvoice", [UserController::class, "binvoice"]);
   Route::get("/bticket", [UserController::class, "bticket"]);
@@ -97,6 +97,10 @@ Route::prefix('user')->group(function () {
   Route::get("/my-profile", [UserController::class, "myprofile"]);
   Route::get("/wallet", [UserController::class, "wallet"]);
 });
+
+Route::post("/signup", [AuthController::class, "signup"])->name('signup');
+Route::post("/login", [AuthController::class, "login"])->name('login');
+Route::post("/logout", [AuthController::class, "logout"])->name('logout');
 
 Route::get('/auth/oauth/redirect/google', function () {
   return Socialite::driver('google')->redirect();

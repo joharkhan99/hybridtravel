@@ -9,87 +9,113 @@
 
     <div class="col-sm-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
 
-      <div class="login-bg">
+      <form action="{{route('signup')}}" method="post">
+        @csrf
+        <div class="login-bg">
 
-        <h1><span>Create New Account</span></h1>
+          <h1><span>Create New Account</span></h1>
 
-        <div class="login-inp">
+          <div class="login-inp">
 
-          <span>
+            <span>
+              Email or Mobile Number <small>This will be your username</small>
+            </span>
+            @if ($errors->has('email'))
+            <span>
+              {{$errors->first('email')}}
+            </span>
+            @endif
 
-            Email or Mobile Number <small>This will be your username</small>
+            <input type="text" placeholder="Email or Mobile Number" name="email" value="{{old('email')}}">
 
-          </span>
+            <small>OTP verification is done when account is created using mobile number</small>
 
-          <input type="text" placeholder="Email or Mobile Number">
+          </div>
 
-          <small>OTP verification is done when account is created using mobile number</small>
+          <div class="login-inp">
 
-        </div>
+            <span>
+              Name
+            </span>
 
-        <div class="login-inp">
+            @if ($errors->has('name'))
+            <span>
+              {{$errors->first('name')}}
+            </span>
+            @endif
 
-          <span>Password</span>
+            <input type="text" placeholder="name" name="name" value="{{old('name')}}">
+          </div>
 
-          <input type="text" placeholder="minimum 6 characters.">
+          <div class="login-inp">
 
-        </div>
+            <span>Password</span>
+            @if ($errors->has('password'))
+            <span>
+              {{$errors->first('password')}}
+            </span>
+            @endif
 
+            <input type="text" placeholder="minimum 6 characters." name="password" value="{{old('password')}}">
 
-
-        <button type="submit" class="btn-login">
-
-          Create Account
-
-        </button>
-
-
-
-        <div class="orlogin">
-
-          <span>OR CREATE ACCOUNT WITH</span>
-
-        </div>
+          </div>
 
 
 
-        <div class="login-social">
+          <button type="submit" class="btn-login">
 
-          <div class="row">
+            Create Account
 
-            <div class="col-sm-6 col-md-6 col-lg-6">
+          </button>
 
-              <a href="#!" class="lfacebook"><i class="fa fa-facebook"></i> Signup with Facebook</a>
 
-            </div>
 
-            <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="orlogin">
 
-              <a href="#!" class="lgoogle"><i class="fa fa-google"></i> Signup with Google</a>
+            <span>OR CREATE ACCOUNT WITH</span>
+
+          </div>
+
+
+
+          <div class="login-social">
+
+            <div class="row">
+
+              <div class="col-sm-6 col-md-6 col-lg-6">
+
+                <a href="#!" class="lfacebook"><i class="fa fa-facebook"></i> Signup with Facebook</a>
+
+              </div>
+
+              <div class="col-sm-6 col-md-6 col-lg-6">
+
+                <a href="#!" class="lgoogle"><i class="fa fa-google"></i> Signup with Google</a>
+
+              </div>
 
             </div>
 
           </div>
 
+
+
+          <div class="orsignup">
+
+            <span>Or Already a member?</span>
+
+          </div>
+
+          <div class="create-acc">
+
+            <a href="login.html"> Login</a>
+
+          </div>
+
+
+
         </div>
-
-
-
-        <div class="orsignup">
-
-          <span>Or Already a member?</span>
-
-        </div>
-
-        <div class="create-acc">
-
-          <a href="login.html"> Login</a>
-
-        </div>
-
-
-
-      </div>
+      </form>
 
     </div>
 
