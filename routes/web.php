@@ -102,18 +102,17 @@ Route::post("/signup", [AuthController::class, "signup"])->name('signup');
 Route::post("/login", [AuthController::class, "login"])->name('login');
 Route::post("/logout", [AuthController::class, "logout"])->name('logout');
 
-Route::get('/auth/oauth/redirect/google', function () {
-  return Socialite::driver('google')->redirect();
-});
+Route::post('/auth/oauth/redirect/google', [AuthController::class, 'redirectToGoogle'])->name('google');
+Route::get('/auth/oauth/callback/google', [AuthController::class, 'handleGoogleCallback']);
 
-Route::get('/auth/oauth/callback/google', function () {
-  try {
-    $user = Socialite::driver('google')->user();
-    dd($user);
-  } catch (\Throwable $th) {
-    throw $th;
-  }
-});
+// Route::get('/auth/oauth/callback/google', function () {
+//   try {
+//     $user = Socialite::driver('google')->user();
+//     dd($user);
+//   } catch (\Throwable $th) {
+//     throw $th;
+//   }
+// });
 
 
 Route::fallback(function () {

@@ -9,9 +9,9 @@
 
     <div class="col-sm-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
 
-      <form action="{{route('signup')}}" method="post">
-        @csrf
-        <div class="login-bg">
+      <div class="login-bg">
+        <form action="{{route('signup')}}" method="post">
+          @csrf
 
           <h1><span>Create New Account</span></h1>
 
@@ -70,52 +70,47 @@
 
 
 
-          <div class="orlogin">
 
-            <span>OR CREATE ACCOUNT WITH</span>
+        </form>
+        <div class="orlogin">
 
-          </div>
+          <span>OR CREATE ACCOUNT WITH</span>
 
+        </div>
+        <div class="login-social">
 
+          <div class="row">
 
-          <div class="login-social">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <a href="#!" class="lfacebook"><i class="fa fa-facebook"></i> Signup with Facebook</a>
+            </div>
 
-            <div class="row">
-
-              <div class="col-sm-6 col-md-6 col-lg-6">
-
-                <a href="#!" class="lfacebook"><i class="fa fa-facebook"></i> Signup with Facebook</a>
-
-              </div>
-
-              <div class="col-sm-6 col-md-6 col-lg-6">
-
-                <a href="#!" class="lgoogle"><i class="fa fa-google"></i> Signup with Google</a>
-
-              </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <form action="{{route('google')}}" method="post">
+                @csrf
+                <button class="lgoogle w-100">
+                  <i class="fa fa-google"></i> Signup with Google
+                </button>
+              </form>
 
             </div>
 
           </div>
 
+        </div>
+        <div class="orsignup">
 
-
-          <div class="orsignup">
-
-            <span>Or Already a member?</span>
-
-          </div>
-
-          <div class="create-acc">
-
-            <a href="login.html"> Login</a>
-
-          </div>
-
-
+          <span>Or Already a member?</span>
 
         </div>
-      </form>
+
+        <div class="create-acc">
+
+          <a href="login.html"> Login</a>
+
+        </div>
+      </div>
+
 
     </div>
 

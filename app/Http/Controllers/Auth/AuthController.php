@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Laravel\Socialite\Facades\Socialite;
 
 class AuthController extends Controller
 {
@@ -66,5 +67,49 @@ class AuthController extends Controller
     $request->session()->invalidate();
     $request->session()->regenerateToken();
     return redirect()->route('login')->with('message', 'Logged out successfully');
+  }
+
+  public function redirectToGoogle()
+  {
+    return Socialite::driver('google')->redirect();
+  }
+
+  public function handleGoogleCallback()
+  {
+    // $user = Socialite::driver('google')->user();
+    // $existingUser = User::where('email', $user->email)->first();
+    // if ($existingUser) {
+    //   Auth::login($existingUser, true);
+    // } else {
+    //   $newUser = User::create([
+    //     'name' => $user->name,
+    //     'email' => $user->email,
+    //     'password' => bcrypt('password')
+    //   ]);
+    //   Auth::login($newUser, true);
+    // }
+    // return redirect()->to('/user');
+
+    // $user = Socialite::driver('google')->user();
+    // dd($user);
+
+    try {
+      $user = Socialite::driver('google')->user();
+      $existingUser = User::where('email', $user->email)->first();
+      if ($existingUser) {
+        Auth::login($existingUser, true);
+      } else {
+        $newUser = User::create([
+          'name' => $user->name,
+          'email' => $user->email,
+          'password' => bcrypt($user->token),
+          'avatar' => $user->avatar
+        ]);
+        Auth::login($newUser, true);
+      }
+      return redirect()->to('/user');
+    } catch (\Throwable $th) {
+      throw $th;
+    }
   }
 }
