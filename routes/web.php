@@ -39,7 +39,7 @@ Route::get("/holidays-details", [FrontController::class, "holidaysdetails"]);
 Route::get("/holidays", [FrontController::class, "holidays"]);
 Route::get("/hotel-checkout", [FrontController::class, "hotelcheckout"]);
 
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->middleware('auth.admin')->group(function () {
   Route::get("/", [AdminController::class, "index"]);
   Route::get("/add-agent", [AdminController::class, "addagent"]);
   Route::get("/agent", [AdminController::class, "agent"]);
@@ -50,7 +50,7 @@ Route::prefix('admin')->group(function () {
   Route::get("/wallet", [AdminController::class, "wallet"]);
 });
 
-Route::prefix('agent')->group(function () {
+Route::prefix('agent')->middleware('auth.agent')->group(function () {
   Route::get("/", [AgentController::class, "index"]);
   Route::get("/add-markup", [AgentController::class, "addmarkup"]);
   Route::get("/add-staff", [AgentController::class, "addstaff"]);

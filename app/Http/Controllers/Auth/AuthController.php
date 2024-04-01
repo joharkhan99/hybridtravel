@@ -32,7 +32,8 @@ class AuthController extends Controller
     $credentials = $request->only('email', 'password');
     Auth::attempt($credentials);
     $request->session()->regenerate();
-    return response()->json(['message' => 'User created successfully', 'user' => $user]);
+    // return response()->json(['message' => 'User created successfully', 'user' => $user]);
+    return redirect()->route('/user');
   }
 
   public function login(Request $request)
@@ -44,7 +45,14 @@ class AuthController extends Controller
 
     if (Auth::attempt($credentials)) {
       $request->session()->regenerate();
-      return redirect()->intended('/user');
+      $user = Auth::user();
+      if ($user->role === 'admin') {
+        return redirect()->intended('/admin');
+      } elseif ($user->role === 'agent') {
+        return redirect()->intended('/agent');
+      } elseif ($user->role === 'user') {
+        return redirect()->intended('/user');
+      }
     }
 
     return back()->withErrors([

@@ -42,12 +42,12 @@ class User extends Authenticatable
     'email_verified_at' => 'datetime',
   ];
 
-  public function getJWTIdentifier()
-  {
-    return $this->getKey();
-  }
-  public function getJWTCustomClaims()
-  {
-    return [];
-  }
+  // public function getJWTIdentifier()
+  // {
+  //   return $this->getKey();
+  // }
+  // public function getJWTCustomClaims()
+  // {
+  //   return [];
+  // }
 }

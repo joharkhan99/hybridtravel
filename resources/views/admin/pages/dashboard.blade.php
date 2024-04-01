@@ -9,6 +9,10 @@
 
   <div class="row">
 
+    <h1>
+      ADMIN
+    </h1>
+
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
 
       <div class="user-profile-bg">

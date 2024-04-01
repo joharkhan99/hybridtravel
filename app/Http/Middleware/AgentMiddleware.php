@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class UserMiddleware
+class AgentMiddleware
 {
   /**
    * Handle an incoming request.
@@ -22,7 +22,7 @@ class UserMiddleware
       ])->onlyInput('email');
     }
     $user = Auth::user();
-    if ($user->role !== 'user') {
+    if ($user->role !== 'agent') {
       return redirect()->route('login')->withErrors([
         'message' => 'Unauthorized Access!'
       ]);
