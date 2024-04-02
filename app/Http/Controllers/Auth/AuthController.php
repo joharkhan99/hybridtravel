@@ -15,7 +15,6 @@ class AuthController extends Controller
     // $this->middleware('auth:api');
   }
 
-
   public function signup(Request $request)
   {
     $request->validate([
@@ -33,7 +32,6 @@ class AuthController extends Controller
     $credentials = $request->only('email', 'password');
     Auth::attempt($credentials);
     $request->session()->regenerate();
-    // return response()->json(['message' => 'User created successfully', 'user' => $user]);
     return redirect()->route('user');
   }
 
@@ -79,22 +77,10 @@ class AuthController extends Controller
     try {
       $user = Socialite::driver('google')->user();
     } catch (\Throwable $th) {
-      // throw  $th;
       return redirect()->route('login')->with('message', 'Something went wrong');
     }
 
     $existingUser = User::where('email', $user->email)->first();
-
-    // echo $user->getAvatar();
-    // $user->getName()
-    // return;
-
-    // echo $user->getName() . '<br>';
-    // echo $user->getEmail() . '<br>';
-    // echo $user->getAvatar() . '<br>';
-    // echo $user->token . '<br>';
-    // return;
-
     if ($existingUser) {
       Auth::login($existingUser, true);
     } else {
@@ -103,15 +89,9 @@ class AuthController extends Controller
         'email' => $user->getEmail(),
         'avatar' => str($user->getAvatar()),
         'password' => bcrypt($user->token),
+        'is_google_account' => true,
       ]);
       $newUser->save();
-
-      // $newUser = User::create([
-      //   'name' => $user->getName(),
-      //   'email' => $user->getEmail(),
-      //   'avatar' => $user->getAvatar(),
-      //   'password' => bcrypt($user->token),
-      // ]);
       Auth::login($newUser, true);
     }
     return redirect()->to('user');
