@@ -69,8 +69,6 @@
           </button>
 
 
-
-
         </form>
         <div class="orlogin">
 
@@ -92,7 +90,6 @@
                   <i class="fa fa-google"></i> Signup with Google
                 </button>
               </form>
-
             </div>
 
           </div>

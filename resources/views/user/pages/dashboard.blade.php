@@ -17,7 +17,11 @@
       <div class="user-profile-bg">
         <!--User info-->
         <div class="user-profile-info">
-          <img src="../img/team/captain-america.png" alt="">
+          <p>
+            {{Auth::user()->name}}
+            {{Auth::user()->avatar}}
+          </p>
+          <img src="{{Auth::user()->avatar}}" alt="">
           <h2>Captain America</h2>
           <h6>Delhi, India</h6>
         </div>

@@ -9,59 +9,61 @@
 
     <div class="col-sm-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
 
-      <form class="login-bg" action="{{route('login')}}" method="post">
-        @csrf
-        <h1><span>Login</span></h1>
+      <div class="login-bg">
+        <form action="{{route('login')}}" method="post">
+          @csrf
+          <h1><span>Login</span></h1>
 
-        @if (session('message'))
-        <span>
-          {{ session('message') }}
-        </span>
-        @endif
+          @if (session('message'))
+          <span>
+            {{ session('message') }}
+          </span>
+          @endif
 
-        @if ($errors->has('email'))
-        <span>
-          {{$errors->first('email')}}
-        </span>
-        @endif
+          @if ($errors->has('email'))
+          <span>
+            {{$errors->first('email')}}
+          </span>
+          @endif
 
-        @if ($errors->has('password'))
-        <span>
-          {{$errors->first('password')}}
-        </span>
-        @endif
+          @if ($errors->has('password'))
+          <span>
+            {{$errors->first('password')}}
+          </span>
+          @endif
 
-        <div class="login-inp">
+          <div class="login-inp">
 
-          <span>Email or Mobile Number</span>
+            <span>Email or Mobile Number</span>
 
-          <input type="text" placeholder="Email or Mobile Number" name="email" value="{{old('email')}}">
+            <input type="text" placeholder="Email or Mobile Number" name="email" value="{{old('email')}}">
 
-        </div>
+          </div>
 
-        <div class="login-inp">
+          <div class="login-inp">
 
-          <span>Password</span>
+            <span>Password</span>
 
-          <input type="text" placeholder="minimum 6 characters." name="password" value="{{old('password')}}">
+            <input type="text" placeholder="minimum 6 characters." name="password" value="{{old('password')}}">
 
-        </div>
+          </div>
 
-        <a href="forgot.html" class="forgot">Forgot Password?</a>
+          <a href="forgot.html" class="forgot">Forgot Password?</a>
 
-        <label class="check">
+          <label class="check">
 
-          Remember Me
+            Remember Me
 
-          <input type="checkbox" checked="checked">
+            <input type="checkbox" checked="checked">
 
-          <span class="checkmark"></span>
+            <span class="checkmark"></span>
 
-        </label>
+          </label>
 
 
 
-        <button type="submit" class="btn-login">Login</button>
+          <button type="submit" class="btn-login">Login</button>
+        </form>
 
 
 
@@ -84,9 +86,12 @@
             </div>
 
             <div class="col-sm-6 col-md-6 col-lg-6">
-
-              <a href="#!" class="lgoogle"><i class="fa fa-google"></i> Login with Google</a>
-
+              <form action="{{route('google')}}" method="post">
+                @csrf
+                <button class="lgoogle w-100">
+                  <i class="fa fa-google"></i> Login with Google
+                </button>
+              </form>
             </div>
 
           </div>
@@ -109,7 +114,7 @@
 
 
 
-      </form>
+      </div>
 
     </div>
 
