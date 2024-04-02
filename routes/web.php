@@ -40,7 +40,7 @@ Route::get("/holidays", [FrontController::class, "holidays"]);
 Route::get("/hotel-checkout", [FrontController::class, "hotelcheckout"]);
 
 Route::prefix('admin')->middleware('auth.admin')->group(function () {
-  Route::get("/", [AdminController::class, "index"]);
+  Route::get("/", [AdminController::class, "index"])->name('admin');
   Route::get("/add-agent", [AdminController::class, "addagent"]);
   Route::get("/agent", [AdminController::class, "agent"]);
   Route::get("/change-password", [AdminController::class, "changepassword"]);
@@ -51,7 +51,7 @@ Route::prefix('admin')->middleware('auth.admin')->group(function () {
 });
 
 Route::prefix('agent')->middleware('auth.agent')->group(function () {
-  Route::get("/", [AgentController::class, "index"]);
+  Route::get("/", [AgentController::class, "index"])->name('agent');
   Route::get("/add-markup", [AgentController::class, "addmarkup"]);
   Route::get("/add-staff", [AgentController::class, "addstaff"]);
   Route::get("/binvoice", [AgentController::class, "binvoice"]);
@@ -76,7 +76,7 @@ Route::prefix('agent')->middleware('auth.agent')->group(function () {
 });
 
 Route::prefix('user')->middleware('auth.user')->group(function () {
-  Route::get("/", [UserController::class, "index"]);
+  Route::get("/", [UserController::class, "index"])->name('user');
   Route::get("/binvoice", [UserController::class, "binvoice"]);
   Route::get("/bticket", [UserController::class, "bticket"]);
   Route::get("/bus-details", [UserController::class, "busdetails"]);

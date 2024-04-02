@@ -6,22 +6,19 @@
 
 <!--Content start-->
 <div class="container mar60">
+  <h1>
+    USER:
+    {{Auth::user()->name}}
+  </h1>
 
   <div class="row">
 
-    <h1>
-      USER
-    </h1>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
       <div class="user-profile-bg">
         <!--User info-->
         <div class="user-profile-info">
-          <p>
-            {{Auth::user()->name}}
-            {{Auth::user()->avatar}}
-          </p>
-          <img src="{{Auth::user()->avatar}}" alt="">
+          <img src="{{Auth::user()->avatar}}">
           <h2>Captain America</h2>
           <h6>Delhi, India</h6>
         </div>

@@ -4,9 +4,24 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FrontController extends Controller
 {
+  protected function checkIfUserLoggedIn()
+  {
+    if (Auth::check()) {
+      $user = Auth::user();
+      if ($user->role == 'admin') {
+        return redirect()->intended('/admin');
+      } elseif ($user->role == 'agent') {
+        return redirect()->intended('/agent');
+      } elseif ($user->role == 'user') {
+        return redirect()->intended('/user');
+      }
+    }
+  }
+
   /**
    * Display a listing of the resource.
    */
@@ -30,13 +45,33 @@ class FrontController extends Controller
   }
   public function login()
   {
-    //
-    return view("front.pages.login");
+    if (Auth::check()) {
+      $user = Auth::user();
+      if ($user->role == 'admin') {
+        return redirect()->intended('admin');
+      } elseif ($user->role == 'agent') {
+        return redirect()->intended('agent');
+      } elseif ($user->role == 'user') {
+        return redirect()->intended('user');
+      }
+    } else {
+      return view("front.pages.login");
+    }
   }
   public function signup()
   {
-    //
-    return view("front.pages.signup");
+    if (Auth::check()) {
+      $user = Auth::user();
+      if ($user->role == 'admin') {
+        return redirect()->intended('admin');
+      } elseif ($user->role == 'agent') {
+        return redirect()->intended('agent');
+      } elseif ($user->role == 'user') {
+        return redirect()->intended('user');
+      }
+    } else {
+      return view("front.pages.signup");
+    }
   }
 
   public function blogdetails()

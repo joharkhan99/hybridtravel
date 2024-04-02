@@ -34,7 +34,7 @@ class AuthController extends Controller
     Auth::attempt($credentials);
     $request->session()->regenerate();
     // return response()->json(['message' => 'User created successfully', 'user' => $user]);
-    return redirect()->route('/user');
+    return redirect()->route('user');
   }
 
   public function login(Request $request)
@@ -48,11 +48,11 @@ class AuthController extends Controller
       $request->session()->regenerate();
       $user = Auth::user();
       if ($user->role === 'admin') {
-        return redirect()->intended('/admin');
+        return redirect()->intended('admin');
       } elseif ($user->role === 'agent') {
-        return redirect()->intended('/agent');
+        return redirect()->intended('agent');
       } elseif ($user->role === 'user') {
-        return redirect()->intended('/user');
+        return redirect()->intended('user');
       }
     }
 
@@ -85,20 +85,35 @@ class AuthController extends Controller
 
     $existingUser = User::where('email', $user->email)->first();
 
-    // echo $user->user['picture'];
+    // echo $user->getAvatar();
+    // $user->getName()
+    // return;
+
+    // echo $user->getName() . '<br>';
+    // echo $user->getEmail() . '<br>';
+    // echo $user->getAvatar() . '<br>';
+    // echo $user->token . '<br>';
     // return;
 
     if ($existingUser) {
       Auth::login($existingUser, true);
     } else {
-      $newUser = User::create([
-        'name' => $user->name,
-        'email' => $user->email,
+      $newUser = new User([
+        'name' => $user->getName(),
+        'email' => $user->getEmail(),
+        'avatar' => str($user->getAvatar()),
         'password' => bcrypt($user->token),
-        'avatar' => $user->user['picture']
       ]);
+      $newUser->save();
+
+      // $newUser = User::create([
+      //   'name' => $user->getName(),
+      //   'email' => $user->getEmail(),
+      //   'avatar' => $user->getAvatar(),
+      //   'password' => bcrypt($user->token),
+      // ]);
       Auth::login($newUser, true);
     }
-    return redirect()->to('/user');
+    return redirect()->to('user');
   }
 }

@@ -7,11 +7,12 @@
 <!--Content start-->
 <div class="container mar60">
 
-  <div class="row">
+  <h1>
+    AGENT:
+    {{Auth::user()->name}}
+  </h1>
 
-    <h1>
-      AGENT
-    </h1>
+  <div class="row">
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
       <div class="user-profile-bg">
@@ -39,6 +40,10 @@
     </div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+      <form action="{{route('logout')}}" method="post">
+        @csrf
+        <button type="submit" class="btn btn-primary">Logout</button>
+      </form>
 
       <h1 class="dashboard-title"><span>Your account <small>Manage your account and settings here.</small></span></h1>
 
