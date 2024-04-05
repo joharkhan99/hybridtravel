@@ -195,7 +195,7 @@
 
         </div>
 
-        <a href="cab-check-out.html" class="book">Book Now</a>
+        <a href="{{route('front.cab_checkout')}}" class="book">Book Now</a>
 
       </div>
 
@@ -391,7 +391,7 @@
 
         </div>
 
-        <a href="cab-check-out.html" class="book">Book Now</a>
+        <a href="{{route('front.cab_checkout')}}" class="book">Book Now</a>
 
       </div>
 
@@ -587,7 +587,7 @@
 
         </div>
 
-        <a href="cab-check-out.html" class="book">Book Now</a>
+        <a href="{{route('front.cab_checkout')}}" class="book">Book Now</a>
 
       </div>
 
@@ -783,7 +783,7 @@
 
         </div>
 
-        <a href="cab-check-out.html" class="book">Book Now</a>
+        <a href="{{route('front.cab_checkout')}}" class="book">Book Now</a>
 
       </div>
 
@@ -979,7 +979,7 @@
 
         </div>
 
-        <a href="cab-check-out.html" class="book">Book Now</a>
+        <a href="{{route('front.cab_checkout')}}" class="book">Book Now</a>
 
       </div>
 

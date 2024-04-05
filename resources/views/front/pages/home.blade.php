@@ -1799,7 +1799,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3">
 
-        <a href="holidays.html" class="tour-block">
+        <a href="{{route('front.holidays')}}" class="tour-block">
 
           <img src="{{URL::asset('assets/img/t1.png')}}" alt="">
 
@@ -1815,7 +1815,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3">
 
-        <a href="holidays.html" class="tour-block">
+        <a href="{{route('front.holidays')}}" class="tour-block">
 
           <img src="{{URL::asset('assets/img/t2.png')}}" alt="">
 
@@ -1831,7 +1831,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3">
 
-        <a href="holidays.html" class="tour-block">
+        <a href="{{route('front.holidays')}}" class="tour-block">
 
           <img src="{{URL::asset('assets/img/t3.png')}}" alt="">
 
@@ -1847,7 +1847,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-3">
 
-        <a href="holidays.html" class="tour-block">
+        <a href="{{route('front.holidays')}}" class="tour-block">
 
           <img src="{{URL::asset('assets/img/t4.png')}}" alt="">
 
@@ -1865,7 +1865,7 @@
 
 
 
-    <a href="holidays.html" class="view-more">View More</a>
+    <a href="{{route('front.holidays')}}" class="view-more">View More</a>
 
   </div>
 
@@ -1884,7 +1884,7 @@
     <div class="row">
 
       <div class="col-12 col-md-4 col-md-4">
-        <a href="blog-details.html" class="tour-block">
+        <a href="{{('front.blog_details')}}" class="tour-block">
           <img src="{{URL::asset('assets/img/about-02.jpg')}}" alt="">
           <h2>
             Key benefits of my portfolio
@@ -1893,7 +1893,7 @@
       </div>
 
       <div class="col-12 col-md-4 col-md-4">
-        <a href="blog-details.html" class="tour-block">
+        <a href="{{('front.blog_details')}}" class="tour-block">
           <img src="{{URL::asset('assets/img/about-03.jpg')}}" alt="">
           <h2>
             Reasons to go responsive
@@ -1902,7 +1902,7 @@
       </div>
 
       <div class="col-12 col-md-4 col-md-4">
-        <a href="blog-details.html" class="tour-block">
+        <a href="{{('front.blog_details')}}" class="tour-block">
           <img src="{{URL::asset('assets/img/about-04.jpg')}}" alt="">
           <h2>
             How to keep your SEO rankings
@@ -1914,7 +1914,7 @@
 
 
 
-    <a href="blog.html" class="view-more">View More</a>
+    <a href="{{route('front.blog')}}" class="view-more">View More</a>
 
   </div>
 

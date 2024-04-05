@@ -611,7 +611,7 @@
 
           <div class="col-12 col-sm-2 col-md-2 col-lg-2">
 
-            <a href="flight-check-out.html" class="book">Book Now</a>
+            <a href="{{route('front.flight_checkout')}}" class="book">Book Now</a>
 
           </div>
 
@@ -1036,7 +1036,7 @@
 
           <div class="col-12 col-sm-2 col-md-2 col-lg-2">
 
-            <a href="flight-check-out.html" class="book">Book Now</a>
+            <a href="{{route('front.flight_checkout')}}" class="book">Book Now</a>
 
           </div>
 
@@ -1461,7 +1461,7 @@
 
           <div class="col-12 col-sm-2 col-md-2 col-lg-2">
 
-            <a href="flight-check-out.html" class="book">Book Now</a>
+            <a href="{{route('front.flight_checkout')}}" class="book">Book Now</a>
 
           </div>
 
@@ -1886,7 +1886,7 @@
 
           <div class="col-12 col-sm-2 col-md-2 col-lg-2">
 
-            <a href="flight-check-out.html" class="book">Book Now</a>
+            <a href="{{route('front.flight_checkout')}}" class="book">Book Now</a>
 
           </div>
 
@@ -2311,7 +2311,7 @@
 
           <div class="col-12 col-sm-2 col-md-2 col-lg-2">
 
-            <a href="flight-check-out.html" class="book">Book Now</a>
+            <a href="{{route('front.flight_checkout')}}" class="book">Book Now</a>
 
           </div>
 

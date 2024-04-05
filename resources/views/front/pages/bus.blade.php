@@ -848,7 +848,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>
@@ -1646,7 +1646,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>
@@ -2444,7 +2444,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>
@@ -3242,7 +3242,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>
@@ -4040,7 +4040,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>
@@ -4838,7 +4838,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>
@@ -5636,7 +5636,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>
@@ -6434,7 +6434,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="bus-check-out.html" class="book-seat-btn">Book Seats</a>
+              <a href="{{route('user.my_bus')}}" class="book-seat-btn">Book Seats</a>
               <span class="total-amount"><i class="fa fa-rupee"></i> 2097</span>
             </div>
           </div>

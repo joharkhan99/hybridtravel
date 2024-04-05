@@ -25,7 +25,7 @@
 
             <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-              <a href="hotel-details.html">
+              <a href="{{route('front.hotel_details')}}">
 
                 <img src="img/t1.png" class="himg" alt="">
 
@@ -37,7 +37,7 @@
 
               <h2 class="ht">
 
-                <a href="hotel-details.html">2 Nights Kuala Lumpur & 3 Nights Bali</a>
+                <a href="{{route('front.hotel_details')}}">2 Nights Kuala Lumpur & 3 Nights Bali</a>
 
               </h2>
 
@@ -63,7 +63,7 @@
 
               <br>
 
-              <a href="holidays-details.html">View details</a>
+              <a href="{{('front.holidays_details')}}">View details</a>
 
 
 

@@ -22,14 +22,19 @@
         <!--Navigation-->
         <div class="user-nav">
           <ul>
-            <li class="current"><a href="my-flight.html"><i class="fa fa-plane"></i> My Flight</a></li>
-            <li><a href="my-hotel.html"><i class="fa fa-bed"></i> My Hotel</a></li>
-            <li><a href="my-holidays.html"><i class="fa fa-briefcase"></i> My Holidays</a></li>
-            <li><a href="my-bus.html"><i class="fa fa-bus"></i> My Bus</a></li>
-            <li><a href="my-cab.html"><i class="fa fa-taxi"></i> My Cab</a></li>
-            <li><a href="wallet.html"><i class="fa fa-google-wallet"></i> My Wallet</a></li>
-            <li><a href="my-profile.html"><i class="fa fa-user"></i> My Profile</a></li>
-            <li><a href="../login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+            <li><a href="{{ route('user.my_flight') }}"><i class="fa fa-plane"></i> My Flight</a></li>
+            <li><a href="{{ route('user.my_hotel') }}"><i class="fa fa-bed"></i> My Hotel</a></li>
+            <li><a href="{{ route('user.my_holidays') }}"><i class="fa fa-briefcase"></i> My Holidays</a></li>
+            <li class="current"><a href="{{ route('user.my_bus') }}"><i class="fa fa-bus"></i> My Bus</a></li>
+            <li><a href="{{ route('user.my_cab') }}"><i class="fa fa-taxi"></i> My Cab</a></li>
+            <li><a href="{{ route('user.wallet') }}"><i class="fa fa-google-wallet"></i> My Wallet</a></li>
+            <li><a href="{{ route('user.my_profile') }}"><i class="fa fa-user"></i> My Profile</a></li>
+            <li>
+              <form action="{{route('logout')}}" method="post">
+                @csrf
+                <button type="submit"><i class="fa fa-sign-out"></i> Logout</button>
+              </form>
+            </li>
           </ul>
         </div>
       </div>

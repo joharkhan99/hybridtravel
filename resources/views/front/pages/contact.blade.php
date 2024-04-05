@@ -12,7 +12,7 @@
     </h6>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="breadcrumb-item active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
         <li class="breadcrumb-item">Contact Us</li>
       </ol>
     </nav>

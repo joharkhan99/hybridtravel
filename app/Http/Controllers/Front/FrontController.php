@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use PAPI\APIv3\Client;
 
 class FrontController extends Controller
 {
@@ -37,6 +38,9 @@ class FrontController extends Controller
   {
     //
     return view("front.pages.about");
+    // $client = new Client('7245:291e9297-f27d-4a92-8d9c-0b7dcff51fbc');
+    // $overview = $client->overview();
+    // dd($overview);
   }
   public function blog()
   {

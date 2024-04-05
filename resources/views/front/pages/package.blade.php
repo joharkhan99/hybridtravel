@@ -207,7 +207,7 @@
 
           <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-            <a href="holidays-details.html">
+            <a href="{{route('front.holidays_details')}}">
 
               <img src="img/t1.png" class="himg" alt="">
 
@@ -219,7 +219,7 @@
 
             <h2 class="ht">
 
-              <a href="package-details.html">2 Nights Kuala Lumpur & 3 Nights Bali</a>
+              <a href="{{route('front.package_details')}}">2 Nights Kuala Lumpur & 3 Nights Bali</a>
 
             </h2>
 
@@ -257,7 +257,7 @@
 
             </div>
 
-            <a href="package-details.html" class="book">View Details</a>
+            <a href="{{route('front.package_details')}}" class="book">View Details</a>
 
           </div>
 
@@ -273,7 +273,7 @@
 
           <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-            <a href="holidays-details.html">
+            <a href="{{route('front.holidays_details')}}">
 
               <img src="img/t2.png" class="himg" alt="">
 
@@ -285,7 +285,7 @@
 
             <h2 class="ht">
 
-              <a href="package-details.html">2 Nights Kuala Lumpur & 3 Nights Bali</a>
+              <a href="{{route('front.package_details')}}">2 Nights Kuala Lumpur & 3 Nights Bali</a>
 
             </h2>
 
@@ -323,7 +323,7 @@
 
             </div>
 
-            <a href="package-details.html" class="book">View Details</a>
+            <a href="{{route('front.package_details')}}" class="book">View Details</a>
 
           </div>
 
@@ -339,7 +339,7 @@
 
           <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-            <a href="holidays-details.html">
+            <a href="{{route('front.holidays_details')}}">
 
               <img src="img/t3.png" class="himg" alt="">
 
@@ -351,7 +351,7 @@
 
             <h2 class="ht">
 
-              <a href="package-details.html">2 Nights Kuala Lumpur & 3 Nights Bali</a>
+              <a href="{{route('front.package_details')}}">2 Nights Kuala Lumpur & 3 Nights Bali</a>
 
             </h2>
 
@@ -389,7 +389,7 @@
 
             </div>
 
-            <a href="package-details.html" class="book">View Details</a>
+            <a href="{{route('front.package_details')}}" class="book">View Details</a>
 
           </div>
 

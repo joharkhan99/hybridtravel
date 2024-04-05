@@ -37,7 +37,7 @@
 
         </span>
 
-        <a href="holidays-check-out.html" class="book-bg">Book Now</a>
+        <a href="{{route('front.holidays_checkout')}}" class="book-bg">Book Now</a>
 
       </div>
 

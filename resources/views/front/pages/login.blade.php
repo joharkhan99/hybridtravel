@@ -48,7 +48,7 @@
 
           </div>
 
-          <a href="forgot.html" class="forgot">Forgot Password?</a>
+          <a href="/forgot" class="forgot">Forgot Password?</a>
 
           <label class="check">
 
@@ -108,7 +108,7 @@
 
         <div class="create-acc">
 
-          <a href="signup.html"> Create New Account</a>
+          <a href="/signup"> Create New Account</a>
 
         </div>
 

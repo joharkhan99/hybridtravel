@@ -29,7 +29,7 @@
       <div class="col-12 col-sm-12 col-md-8 col-lg-8">
         <!--Item 01-->
         <div class="article-item">
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>How do I get a receipt for my purchase?</h2>
           </a>
           <p>
@@ -48,7 +48,7 @@
 
         <!--Item 02-->
         <div class="article-item">
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>What methods of payments are supported?</h2>
           </a>
           <p>
@@ -67,7 +67,7 @@
 
         <!--Item 03-->
         <div class="article-item">
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>How do I get access to a theme I purchased?</h2>
           </a>
           <p>
@@ -86,7 +86,7 @@
 
         <!--Item 04-->
         <div class="article-item">
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>How do I get help with the theme I purchased?</h2>
           </a>
           <p>
@@ -105,7 +105,7 @@
 
         <!--Item 05-->
         <div class="article-item">
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>My account</h2>
           </a>
           <p>

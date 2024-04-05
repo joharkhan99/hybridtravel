@@ -11,7 +11,7 @@
     <h6>We help people find great products at a reasonable price</h6>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="breadcrumb-item active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
         <li class="breadcrumb-item">About Us</li>
       </ol>
     </nav>
@@ -251,7 +251,7 @@
           <div class="row">
             <div class="col-12 col-sm-7 col-md-12 col-lg-7">
               <div class="news-text">
-                <a href="blog-details.html">
+                <a href="{{route('front.blog_details')}}">
                   <h2>
                     How to keep your SEO rankings
                   </h2>
@@ -262,7 +262,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-5 col-md-12 col-lg-5">
-              <a href="blog-details.html">
+              <a href="{{route('frnt.blog_details')}}">
                 <img src="{{URL::asset('assets/img/about-02.jpg')}}" alt="">
               </a>
             </div>
@@ -275,7 +275,7 @@
           <div class="row">
             <div class="col-12 col-sm-7 col-md-12 col-lg-7">
               <div class="news-text">
-                <a href="blog-details.html">
+                <a href="{{route('frnt.blog_details')}}">
                   <h2>
                     The best rebrands of the year
                   </h2>
@@ -286,7 +286,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-5 col-md-12 col-lg-5">
-              <a href="blog-details.html">
+              <a href="{{route('frnt.blog_details')}}">
                 <img src="{{URL::asset('assets/img/about-03.jpg')}}" alt="">
               </a>
             </div>
@@ -299,7 +299,7 @@
           <div class="row">
             <div class="col-12 col-sm-7 col-md-12 col-lg-7">
               <div class="news-text">
-                <a href="blog-details.html">
+                <a href="{{route('frnt.blog_details')}}">
                   <h2>
                     Key benefits of my portfolio update
                   </h2>
@@ -310,7 +310,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-5 col-md-12 col-lg-5">
-              <a href="blog-details.html">
+              <a href="{{route('frnt.blog_details')}}">
                 <img src="{{URL::asset('assets/img/about-04.jpg')}}" alt="">
               </a>
             </div>
@@ -323,7 +323,7 @@
           <div class="row">
             <div class="col-12 col-sm-7 col-md-12 col-lg-7">
               <div class="news-text">
-                <a href="blog-details.html">
+                <a href="{{route('frnt.blog_details')}}">
                   <h2>
                     Reasons to go responsive
                   </h2>
@@ -334,7 +334,7 @@
               </div>
             </div>
             <div class="col-12 col-sm-5 col-md-12 col-lg-5">
-              <a href="blog-details.html">
+              <a href="{{route('frnt.blog_details')}}">
                 <img src="{{URL::asset('assets/img/about-05.jpg')}}" alt="">
               </a>
             </div>

@@ -25,7 +25,7 @@
 
             <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-              <a href="hotel-details.html">
+              <a href="{{route('front.hotel_details')}}">
 
                 <img src="img/t1.png" class="himg" alt="">
 
@@ -37,7 +37,7 @@
 
               <h2 class="ht">
 
-                <a href="hotel-details.html">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
+                <a href="{{route('front.hotel_details')}}">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
 
               </h2>
 
@@ -73,7 +73,7 @@
 
               </div>
 
-              <a href="hotel-details.html" class="book">Change Room</a>
+              <a href="{{route('front.hotel_details')}}" class="book">Change Room</a>
 
             </div>
 
@@ -216,7 +216,7 @@
         <!--Contact traveller details start-->
         <br> <br>
 
-        <h2 class="htitle"><i class="fa fa-user"></i> Enter Contact Details | <small> <a href="login.html">Sign in</a> to book faster</small></h2>
+        <h2 class="htitle"><i class="fa fa-user"></i> Enter Contact Details | <small> <a href="/login">Sign in</a> to book faster</small></h2>
 
         <div class="form-bg">
 

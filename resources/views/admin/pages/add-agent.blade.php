@@ -14,7 +14,7 @@
       <div class="user-profile-bg">
         <!--User info-->
         <div class="user-profile-info">
-          <img src="../img/team/funky.png" alt="" />
+          <img src="{{ asset('img/team/funky.png') }}" alt="" />
           <h2>Fury</h2>
           <h6>Delhi, India</h6>
         </div>
@@ -22,12 +22,12 @@
         <!--Navigation-->
         <div class="user-nav">
           <ul>
-            <li class="current"><a href="agent.html"><i class="fa fa-plane"></i> My Agent</a></li>
-            <li><a href="markup.html"><i class="fa fa-edit"></i> Markup</a></li>
-            <li><a href="report.html"><i class="fa fa-file-excel-o"></i> Report</a></li>
-            <li><a href="wallet.html"><i class="fa fa-google-wallet"></i> My Wallet</a></li>
-            <li><a href="setting.html"><i class="fa fa-sliders"></i> Setting</a></li>
-            <li><a href="../login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+            <li class="current"><a href="{{ route('admin.agent') }}"><i class="fa fa-plane"></i> My Agent</a></li>
+            <li><a href="{{ route('admin.markup') }}"><i class="fa fa-edit"></i> Markup</a></li>
+            <li><a href="{{ route('admin.report') }}"><i class="fa fa-file-excel-o"></i> Report</a></li>
+            <li><a href="{{ route('admin.wallet') }}"><i class="fa fa-google-wallet"></i> My Wallet</a></li>
+            <li><a href="{{ route('admin.setting') }}"><i class="fa fa-sliders"></i> Setting</a></li>
+            <li><a href="{{ route('admin.logout') }}"><i class="fa fa-sign-out"></i> Logout</a></li>
           </ul>
         </div>
       </div>

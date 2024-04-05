@@ -4,16 +4,16 @@
 <div class="mob-nav">
   <div class="row">
     <div class="col-3">
-      <a href="flight.html"><i class="fa fa-plane"></i> <span>Flight</span></a>
+      <a href="{{ route('front.flight') }}"><i class="fa fa-plane"></i> <span>Flight</span></a>
     </div>
     <div class="col-3">
-      <a href="hotel.html"><i class="fa fa-bed"></i> <span>Hotel</span></a>
+      <a href="{{ route('front.hotel') }}"><i class="fa fa-bed"></i> <span>Hotel</span></a>
     </div>
     <div class="col-3">
-      <a href="holidays.html"><i class="fa fa-briefcase"></i> <span>Holidays</span></a>
+      <a href="{{ route('front.holidays') }}"><i class="fa fa-briefcase"></i> <span>Holidays</span></a>
     </div>
     <div class="col-3">
-      <a href="login.html"><i class="fa fa-user"></i> <span>Login</span></a>
+      <a href="{{ route('login') }}"><i class="fa fa-user"></i> <span>Login</span></a>
     </div>
   </div>
 </div>
@@ -47,8 +47,8 @@
             <div class="collapse navbar-collapse" id="navbarText">
 
               <ul class="navbar-nav mr-auto ">
-                <li><a class="nav-link" href="login.html">24/7 Support</a></li>
-                <li><a class="nav-link" href="login.html">Login or Create Account</a></li>
+                <li><a class="nav-link" href="{{ route('login') }}">24/7 Support</a></li>
+                <li><a class="nav-link" href="{{ route('login') }}">Login or Create Account</a></li>
 
 
                 <li class="nav-item dropdown">
@@ -60,8 +60,8 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="index.html">English</a>
-                    <a class="dropdown-item" href="ar/index.html">Arabic</a>
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Arabic</a>
                   </div>
 
                 </li>
@@ -87,14 +87,13 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="#">
 
-          <img src="{{URL::asset('assets/img/travel-engine-logo.png')}}" alt="">
+          <img src="{{ URL::asset('assets/img/travel-engine-logo.png') }}" alt="">
 
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
           <span class="navbar-toggler-icon"></span>
 
@@ -108,7 +107,7 @@
 
             <li class="nav-item active">
 
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="#">
 
                 <i class="fa fa-home"></i>
 
@@ -120,7 +119,7 @@
 
             <li class="nav-item">
 
-              <a class="nav-link" href="flight.html">
+              <a class="nav-link" href="{{ route('front.flight') }}">
 
                 <i class="fa fa-plane"></i>
 
@@ -132,7 +131,7 @@
 
             <li class="nav-item">
 
-              <a class="nav-link" href="hotel.html">
+              <a class="nav-link" href="{{ route('front.hotel') }}">
 
                 <i class="fa fa-bed"></i>
 
@@ -144,7 +143,7 @@
 
             <li class="nav-item">
 
-              <a class="nav-link" href="bus.html">
+              <a class="nav-link" href="{{ route('front.bus') }}">
 
                 <i class="fa fa-bus"></i>
 
@@ -156,7 +155,7 @@
 
             <li class="nav-item">
 
-              <a class="nav-link" href="cab.html">
+              <a class="nav-link" href="{{ route('front.cab') }}">
 
                 <i class="fa fa-car"></i>
 
@@ -168,7 +167,7 @@
 
             <li class="nav-item">
 
-              <a class="nav-link" href="holidays.html">
+              <a class="nav-link" href="{{ route('front.holidays') }}">
 
                 <i class="fa fa-suitcase"></i>
 

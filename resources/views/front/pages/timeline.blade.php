@@ -10,7 +10,7 @@
     <h6>We transform your perception into an excellent website</h6>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="breadcrumb-item active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
         <li class="breadcrumb-item">Timeline</li>
       </ol>
     </nav>
@@ -85,7 +85,7 @@
 
   <div class="timeline-end">
     <h2>Start a new project with us and start adventure together!</h2>
-    <a href="contact.html">Let's Discuss</a>
+    <a href="/contact">Let's Discuss</a>
   </div>
 </div>
 <!--Content end-->

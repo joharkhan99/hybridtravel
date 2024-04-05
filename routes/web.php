@@ -19,84 +19,118 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get("/", [FrontController::class, "index"]);
-Route::get("/about", [FrontController::class, "about"]);
-Route::get("/blog", [FrontController::class, "blog"]);
-Route::get("/login", [FrontController::class, "login"]);
-Route::get("/signup", [FrontController::class, "signup"])->name('signup');
-Route::get("/blog-details", [FrontController::class, "blogdetails"]);
-Route::get("/bus-checkout", [FrontController::class, "buscheckout"]);
-Route::get("/bus", [FrontController::class, "bus"]);
-Route::get("/cab-checkout", [FrontController::class, "cabcheckout"]);
-Route::get("/cab", [FrontController::class, "cab"]);
-Route::get("/contact", [FrontController::class, "contact"]);
-Route::get("/faqs", [FrontController::class, "faqs"]);
-Route::get("/flight-checkout", [FrontController::class, "flightcheckout"]);
-Route::get("/flight", [FrontController::class, "flight"]);
-Route::get("/forgot", [FrontController::class, "forgot"]);
-Route::get("/holidays-checkout", [FrontController::class, "holidayscheckout"]);
-Route::get("/holidays-details", [FrontController::class, "holidaysdetails"]);
-Route::get("/holidays", [FrontController::class, "holidays"]);
-Route::get("/hotel-checkout", [FrontController::class, "hotelcheckout"]);
+Route::get("/", [FrontController::class, "index"])->name('front.index');
+Route::get("/about", [FrontController::class, "about"])->name('front.about');
+Route::get("/blog", [FrontController::class, "blog"])->name('front.blog');
+Route::get("/login", [FrontController::class, "login"])->name('front.login');
+Route::get("/signup", [FrontController::class, "signup"])->name('front.signup');
+Route::get("/blog-details", [FrontController::class, "blogdetails"])->name('front.blog_details');
+Route::get("/bus-checkout", [FrontController::class, "buscheckout"])->name('front.bus_checkout');
+Route::get("/bus", [FrontController::class, "bus"])->name('front.bus');
+Route::get("/cab-checkout", [FrontController::class, "cabcheckout"])->name('front.cab_checkout');
+Route::get("/cab", [FrontController::class, "cab"])->name('front.cab');
+Route::get("/contact", [FrontController::class, "contact"])->name('front.contact');
+Route::get("/faqs", [FrontController::class, "faqs"])->name('front.faqs');
+Route::get("/flight-checkout", [FrontController::class, "flightcheckout"])->name('front.flight_checkout');
+Route::get("/flight", [FrontController::class, "flight"])->name('front.flight');
+Route::get("/forgot", [FrontController::class, "forgot"])->name('front.forgot');
+Route::get("/holidays-checkout", [FrontController::class, "holidayscheckout"])->name('front.holidays_checkout');
+Route::get("/holidays-details", [FrontController::class, "holidaysdetails"])->name('front.holidays_details');
+Route::get("/holidays", [FrontController::class, "holidays"])->name('front.holidays');
+Route::get("/hotel-checkout", [FrontController::class, "hotelcheckout"])->name('front.hotel_checkout');
+Route::get("/hotel-details", function () {
+  return view("front.pages.hotel_details");
+})->name('front.hotel_details');
+Route::get("/hotel", function () {
+  return view("front.pages.hotel");
+})->name('front.hotel');
+Route::get("/package", function () {
+  return view("front.pages.package");
+})->name('front.package');
+Route::get("/careers", function () {
+  return view("front.pages.careers");
+})->name('front.careers');
+
+Route::get("/coming_soon", function () {
+  return view("front.pages.coming_soon");
+})->name('front.coming_soon');
+
+Route::get("/common_page", function () {
+  return view("front.pages.common_page");
+})->name('front.common_page');
+
+Route::get("/maintenance_mode", function () {
+  return view("front.pages.maintenance_mode");
+})->name('front.maintenance_mode');
+
+Route::get("/package-details", function () {
+  return view("front.pages.package_details");
+})->name('front.package_details');
+Route::get("/timeline", function () {
+  return view("front.pages.timeline");
+})->name('front.timeline');
+
 
 Route::prefix('admin')->middleware('auth.admin')->group(function () {
-  Route::get("/", [AdminController::class, "index"])->name('admin');
-  Route::get("/add-agent", [AdminController::class, "addagent"]);
-  Route::get("/agent", [AdminController::class, "agent"]);
-  Route::get("/change-password", [AdminController::class, "changepassword"]);
-  Route::get("/markup", [AdminController::class, "markup"]);
-  Route::get("/report", [AdminController::class, "report"]);
-  Route::get("/setting", [AdminController::class, "setting"]);
-  Route::get("/wallet", [AdminController::class, "wallet"]);
+  Route::get("/", [AdminController::class, "index"])->name('admin.dashboard');
+  Route::get("/add-agent", [AdminController::class, "addagent"])->name('admin.add_agent');
+  Route::get("/agent", [AdminController::class, "agent"])->name('admin.agent');
+  Route::get("/change-password", [AdminController::class, "changepassword"])->name('admin.change_password');
+  Route::get("/markup", [AdminController::class, "markup"])->name('admin.markup');
+  Route::get("/report", [AdminController::class, "report"])->name('admin.report');
+  Route::get("/setting", [AdminController::class, "setting"])->name('admin.setting');
+  Route::get("/wallet", [AdminController::class, "wallet"])->name('admin.wallet');
 });
 
 Route::prefix('agent')->middleware('auth.agent')->group(function () {
-  Route::get("/", [AgentController::class, "index"])->name('agent');
-  Route::get("/add-markup", [AgentController::class, "addmarkup"]);
-  Route::get("/add-staff", [AgentController::class, "addstaff"]);
-  Route::get("/binvoice", [AgentController::class, "binvoice"]);
-  Route::get("/booking", [AgentController::class, "booking"]);
-  Route::get("/bticket", [AgentController::class, "bticket"]);
-  Route::get("/bus-details", [AgentController::class, "busdetails"]);
-  Route::get("/cab-details", [AgentController::class, "cabdetails"]);
-  Route::get("/cab-invoice", [AgentController::class, "cabinvoice"]);
-  Route::get("/change-password", [AgentController::class, "changepassword"]);
-  Route::get("/finvoice", [AgentController::class, "finvoice"]);
-  Route::get("/flight-details", [AgentController::class, "flightdetails"]);
-  Route::get("/fticket", [AgentController::class, "fticket"]);
-  Route::get("/hdinvoice", [AgentController::class, "hdinvoice"]);
-  Route::get("/hinvoice", [AgentController::class, "hinvoice"]);
-  Route::get("/holidays-details", [AgentController::class, "holidaysdetails"]);
-  Route::get("/hotel-details", [AgentController::class, "hoteldetails"]);
-  Route::get("/markup", [AgentController::class, "markup"]);
-  Route::get("/report", [AgentController::class, "report"]);
-  Route::get("/setting", [AgentController::class, "setting"]);
-  Route::get("/staff", [AgentController::class, "staff"]);
-  Route::get("/wallet", [AgentController::class, "wallet"]);
+  Route::get("/", [AgentController::class, "index"])->name('agent.dashboard');
+  Route::get("/add-markup", [AgentController::class, "addmarkup"])->name('agent.add_markup');
+  Route::get("/add-staff", [AgentController::class, "addstaff"])->name('agent.add_staff');
+  Route::get("/binvoice", [AgentController::class, "binvoice"])->name('agent.booking_invoice');
+  Route::get("/booking", [AgentController::class, "booking"])->name('agent.booking');
+  Route::get("/bticket", [AgentController::class, "bticket"])->name('agent.booking_ticket');
+  Route::get("/bus-details", [AgentController::class, "busdetails"])->name('agent.bus_details');
+  Route::get("/cab-details", [AgentController::class, "cabdetails"])->name('agent.cab_details');
+  Route::get("/cab-invoice", [AgentController::class, "cabinvoice"])->name('agent.cab_invoice');
+  Route::get("/change-password", [AgentController::class, "changepassword"])->name('agent.change_password');
+  Route::get("/finvoice", [AgentController::class, "finvoice"])->name('agent.flight_invoice');
+  Route::get("/flight-details", [AgentController::class, "flightdetails"])->name('agent.flight_details');
+  Route::get("/fticket", [AgentController::class, "fticket"])->name('agent.flight_ticket');
+  Route::get("/hdinvoice", [AgentController::class, "hdinvoice"])->name('agent.holidays_invoice');
+  Route::get("/hinvoice", [AgentController::class, "hinvoice"])->name('agent.hotel_invoice');
+  Route::get("/holidays-details", [AgentController::class, "holidaysdetails"])->name('agent.holidays_details');
+  Route::get("/hotel-details", [AgentController::class, "hoteldetails"])->name('agent.hotel_details');
+  Route::get("/markup", [AgentController::class, "markup"])->name('agent.markup');
+  Route::get("/report", [AgentController::class, "report"])->name('agent.report');
+  Route::get("/setting", [AgentController::class, "setting"])->name('agent.setting');
+  Route::get("/staff", [AgentController::class, "staff"])->name('agent.staff');
+  Route::get("/wallet", [AgentController::class, "wallet"])->name('agent.wallet');
 });
 
+
 Route::prefix('user')->middleware('auth.user')->group(function () {
-  Route::get("/", [UserController::class, "index"])->name('user');
-  Route::get("/binvoice", [UserController::class, "binvoice"]);
-  Route::get("/bticket", [UserController::class, "bticket"]);
-  Route::get("/bus-details", [UserController::class, "busdetails"]);
-  Route::get("/cab-details", [UserController::class, "cabdetails"]);
-  Route::get("/cab-invoice", [UserController::class, "cabinvoice"]);
-  Route::get("/change-password", [UserController::class, "changepassword"]);
-  Route::get("/finvoice", [UserController::class, "finvoice"]);
-  Route::get("/flight-details", [UserController::class, "flightdetails"]);
-  Route::get("/fticket", [UserController::class, "fticket"]);
-  Route::get("/hdinvoice", [UserController::class, "hdinvoice"]);
-  Route::get("/hinvoice", [UserController::class, "hinvoice"]);
-  Route::get("/holidays-details", [UserController::class, "holidaysdetails"]);
-  Route::get("/my-bus", [UserController::class, "mybus"]);
-  Route::get("/my-cab", [UserController::class, "mycab"]);
-  Route::get("/my-flight", [UserController::class, "myflight"]);
-  Route::get("/my-holidays", [UserController::class, "myholidays"]);
-  Route::get("/my-hotel", [UserController::class, "myhotel"]);
-  Route::get("/my-profile", [UserController::class, "myprofile"]);
-  Route::get("/wallet", [UserController::class, "wallet"]);
+  Route::get("/", [UserController::class, "index"])->name('user.dashboard');
+  Route::get("/binvoice", [UserController::class, "binvoice"])->name('user.booking_invoice');
+  Route::get("/bticket", [UserController::class, "bticket"])->name('user.booking_ticket');
+  Route::get("/bus-details", [UserController::class, "busdetails"])->name('user.bus_details');
+  Route::get("/cab-details", [UserController::class, "cabdetails"])->name('user.cab_details');
+  Route::get("/cab-invoice", [UserController::class, "cabinvoice"])->name('user.cab_invoice');
+  Route::get("/change-password", [UserController::class, "changepassword"])->name('user.change_password');
+  Route::get("/finvoice", [UserController::class, "finvoice"])->name('user.flight_invoice');
+  Route::get("/flight-details", [UserController::class, "flightdetails"])->name('user.flight_details');
+  Route::get("/fticket", [UserController::class, "fticket"])->name('user.flight_ticket');
+  Route::get("/hdinvoice", [UserController::class, "hdinvoice"])->name('user.holidays_invoice');
+  Route::get("/hinvoice", [UserController::class, "hinvoice"])->name('user.hotel_invoice');
+  Route::get("/holidays-details", [UserController::class, "holidaysdetails"])->name('user.holidays_details');
+  Route::get("/my-bus", [UserController::class, "mybus"])->name('user.my_bus');
+  Route::get("/my-cab", [UserController::class, "mycab"])->name('user.my_cab');
+  Route::get("/my-flight", [UserController::class, "myflight"])->name('user.my_flight');
+  Route::get("/my-holidays", [UserController::class, "myholidays"])->name('user.my_holidays');
+  Route::get("/my-hotel", [UserController::class, "myhotel"])->name('user.my_hotel');
+  Route::get("/my-profile", [UserController::class, "myprofile"])->name('user.my_profile');
+  Route::get("/wallet", [UserController::class, "wallet"])->name('user.wallet');
 });
+
 
 Route::post("/signup", [AuthController::class, "signup"])->name('signup');
 Route::post("/login", [AuthController::class, "login"])->name('login');

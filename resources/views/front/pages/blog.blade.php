@@ -9,7 +9,7 @@
     <h6>We transform your perception into an excellent website</h6>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="breadcrumb-item active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
         <li class="breadcrumb-item">Blog single</li>
       </ol>
     </nav>
@@ -49,7 +49,7 @@
 
         </p>
 
-        <a href="blog-details.html">Read more</a>
+        <a href="{{route('front.blog_details')}}">Read more</a>
 
       </div>
 
@@ -78,7 +78,7 @@
 
         </p>
 
-        <a href="blog-details.html">Read more</a>
+        <a href="{{route('front.blog_details')}}">Read more</a>
 
       </div>
 
@@ -99,9 +99,9 @@
 
           </li>
 
-          <li class="page-item"><a class="page-link" href="blog.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="{{route('front.blog')}}">2</a></li>
 
-          <li class="page-item"><a class="page-link" href="blog.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="{{route('front.blog')}}">3</a></li>
 
         </ul>
 
@@ -124,7 +124,7 @@
         <h2>Latest Post</h2>
 
         <!--Item 01-->
-        <a href="blog-details.html">
+        <a href="{{route('front.blog_details')}}">
 
           <div class="row">
 
@@ -147,7 +147,7 @@
         </a>
 
         <!--Item 02-->
-        <a href="blog-details.html">
+        <a href="{{route('front.blog_details')}}">
 
           <div class="row">
 
@@ -170,7 +170,7 @@
         </a>
 
         <!--Item 03-->
-        <a href="blog-details.html">
+        <a href="{{route('front.blog_details')}}">
 
           <div class="row">
 

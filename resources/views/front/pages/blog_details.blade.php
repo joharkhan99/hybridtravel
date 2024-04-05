@@ -9,7 +9,7 @@
     <h1>Your One Stop Solution For Development Needs</h1>
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="breadcrumb-item active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
         <li class="breadcrumb-item">Blog single</li>
       </ol>
     </nav>
@@ -221,7 +221,7 @@
         <h2>Latest Post</h2>
 
         <!--Item 01-->
-        <a href="blog-details.html">
+        <a href="{{route('front.blog_details')}}">
 
           <div class="row">
 
@@ -244,7 +244,7 @@
         </a>
 
         <!--Item 02-->
-        <a href="blog-details.html">
+        <a href="{{route('front.blog_details')}}">
 
           <div class="row">
 
@@ -267,7 +267,7 @@
         </a>
 
         <!--Item 03-->
-        <a href="blog-details.html">
+        <a href="{{route('front.blog_details')}}">
 
           <div class="row">
 
@@ -325,7 +325,7 @@
       <div class="col-12 col-md-4">
         <div class="article-item">
           <span>June 21, 2020</span>
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>The Worst Advices We've Heard For Business</h2>
           </a>
           <p>
@@ -346,7 +346,7 @@
       <div class="col-12 col-md-4">
         <div class="article-item">
           <span>July 12, 2020</span>
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>Your One Stop Solution For Development Needs</h2>
           </a>
           <p>
@@ -367,7 +367,7 @@
       <div class="col-12 col-md-4">
         <div class="article-item">
           <span>June 24, 2020</span>
-          <a href="blog-details.html">
+          <a href="{{route('front.blog_details')}}">
             <h2>7 Great Lessons You Can Learn From Business</h2>
           </a>
           <p>

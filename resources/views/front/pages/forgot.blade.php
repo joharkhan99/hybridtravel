@@ -45,7 +45,7 @@
 
         <div class="create-acc">
 
-          <a href="login.html"> Login</a>
+          <a href="/login"> Login</a>
 
         </div>
 

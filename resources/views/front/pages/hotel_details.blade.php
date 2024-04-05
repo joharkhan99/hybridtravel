@@ -35,7 +35,7 @@
 
         </span>
 
-        <a href="hotel-check-out.html" class="book-bg">Book Now</a>
+        <a href="{{route('front.hotel_checkout')}}" class="book-bg">Book Now</a>
 
       </div>
 
@@ -208,7 +208,7 @@
 
         </div>
 
-        <a href="hotel-check-out.html" class="book">Book Now</a>
+        <a href="{{route('front.hotel_checkout')}}" class="book">Book Now</a>
 
       </div>
 
@@ -284,7 +284,7 @@
 
         </div>
 
-        <a href="hotel-check-out.html" class="book">Book Now</a>
+        <a href="{{route('front.hotel_checkout')}}" class="book">Book Now</a>
 
       </div>
 
@@ -298,7 +298,9 @@
 
   <h2 class="htitle">Location</h2>
 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14018.933029095571!2d77.2976815!3d28.5477363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49a5c2c8fefd7ac5!2samssoftech+pvt+ltd!5e0!3m2!1sen!2sin!4v1557223600969!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14018.933029095571!2d77.2976815!3d28.5477363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49a5c2c8fefd7ac5!2samssoftech+pvt+ltd!5e0!3m2!1sen!2sin!4v1557223600969!5m2!1sen!2sin"
+    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 </div>
 <!--Content end-->

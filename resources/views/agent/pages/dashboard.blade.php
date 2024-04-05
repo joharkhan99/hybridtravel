@@ -26,13 +26,18 @@
         <!--Navigation-->
         <div class="user-nav">
           <ul>
-            <li><a href="booking.html"><i class="fa fa-plane"></i> My Booking</a></li>
-            <li><a href="markup.html"><i class="fa fa-edit"></i> Markup</a></li>
-            <li><a href="report.html"><i class="fa fa-file-excel-o"></i> Report</a></li>
-            <li><a href="wallet.html"><i class="fa fa-google-wallet"></i> My Wallet</a></li>
-            <li><a href="staff.html"><i class="fa fa-user"></i> Staff</a></li>
-            <li><a href="setting.html"><i class="fa fa-sliders"></i> Setting</a></li>
-            <li><a href="../login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+            <li><a href="{{ route('agent.booking') }}"><i class="fa fa-plane"></i> My Booking</a></li>
+            <li class="current"><a href="{{ route('agent.markup') }}"><i class="fa fa-edit"></i> Markup</a></li>
+            <li><a href="{{ route('agent.report') }}"><i class="fa fa-file-excel-o"></i> Report</a></li>
+            <li><a href="{{ route('agent.wallet') }}"><i class="fa fa-google-wallet"></i> My Wallet</a></li>
+            <li><a href="{{ route('agent.staff') }}"><i class="fa fa-user"></i> Staff</a></li>
+            <li><a href="{{ route('agent.setting') }}"><i class="fa fa-sliders"></i> Setting</a></li>
+            <li>
+              <form action="{{route('logout')}}" method="post">
+                @csrf
+                <button type="submit"><i class="fa fa-sign-out"></i> Logout</button>
+              </form>
+            </li>
           </ul>
         </div>
       </div>

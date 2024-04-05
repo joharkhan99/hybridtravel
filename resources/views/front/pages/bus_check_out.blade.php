@@ -193,7 +193,7 @@
         <!--Contact traveller details start-->
         <br> <br>
 
-        <h2 class="htitle"><i class="fa fa-user"></i> Enter Contact Details | <small> <a href="login.html">Sign in</a> to book faster</small></h2>
+        <h2 class="htitle"><i class="fa fa-user"></i> Enter Contact Details | <small> <a href="{{route('login')}}">Sign in</a> to book faster</small></h2>
 
         <div class="form-bg">
 

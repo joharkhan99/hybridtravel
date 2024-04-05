@@ -789,7 +789,7 @@
 
           <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-            <a href="hotel-details.html">
+            <a href="{{route('front.hotel_details')}}">
 
               <img src="img/t1.png" class="himg" alt="">
 
@@ -801,7 +801,7 @@
 
             <h2 class="ht">
 
-              <a href="hotel-details.html">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
+              <a href="{{route('front.hotel_details')}}">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
 
             </h2>
 
@@ -911,7 +911,7 @@
 
           <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-            <a href="hotel-details.html">
+            <a href="{{route('front.hotel_details')}}">
 
               <img src="img/t2.png" class="himg" alt="">
 
@@ -923,7 +923,7 @@
 
             <h2 class="ht">
 
-              <a href="hotel-details.html">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
+              <a href="{{route('front.hotel_details')}}">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
 
             </h2>
 
@@ -1033,7 +1033,7 @@
 
           <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-            <a href="hotel-details.html">
+            <a href="{{route('front.hotel_details')}}">
 
               <img src="img/t3.png" class="himg" alt="">
 
@@ -1045,7 +1045,7 @@
 
             <h2 class="ht">
 
-              <a href="hotel-details.html">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
+              <a href="{{route('front.hotel_details')}}">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
 
             </h2>
 
@@ -1155,7 +1155,7 @@
 
           <div class="col-12 col-sm-4 col-md-3 col-lg-3">
 
-            <a href="hotel-details.html">
+            <a href="{{route('front.hotel_details')}}">
 
               <img src="img/t4.png" class="himg" alt="">
 
@@ -1167,7 +1167,7 @@
 
             <h2 class="ht">
 
-              <a href="hotel-details.html">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
+              <a href="{{route('front.hotel_details')}}">Dublin Central Inn (formerly Dublin City Inn Talbot Street)</a>
 
             </h2>
 
